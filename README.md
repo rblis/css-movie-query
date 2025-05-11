@@ -6,7 +6,7 @@
 
 1. Clone the repository and navigate to its root directory
    ```bash
-   git clone 
+   git clone https://github.com/rblis/css-movie-query.git; cd css-movie-query;
    ```
 2. Create a virtual environment
    ```bash
