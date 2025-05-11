@@ -48,7 +48,7 @@
    ```
 
 
-4. To search for the top ten highest grossing movies that are rated `'PG-13'` and print the output to a file called `top_ten_results.csv`
+4. To search for the top ten highest rated movies that are rated `'PG-13'` and print the output to a file called `top_ten_results.csv`
 
    ```bash
    python movie_query.py --age-rating 'PG-13' --top-ten 'highest-rated' --output 'top_ten_results.csv'
