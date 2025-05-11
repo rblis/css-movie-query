@@ -341,7 +341,6 @@ class MovieQuery:
         return results
 
     def perform_commands(self, movies: list[MovieMetric], commands: dict[str, str]) -> None:
-
         if "--top-ten" in commands:
             value = commands["--top-ten"]
             if value in self.top_ten_map:
