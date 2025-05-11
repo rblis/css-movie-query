@@ -57,14 +57,14 @@
 
 ### Design Notes
 
-1. The program is designed to accept a file path as the first argument, if none is provided it defaults to the supplied data file in its root directory.
+1. The program is designed to accept a file path as the first argument, if none is provided, it defaults to the supplied data file in its root directory.
 2. Flags are defined in a map that contains lambda functions to quickly generate the appropriate conditions for the specified flag. This reduces LOC and prevents the file from being cluttered by simple helper methods.
 3. The output to the terminal omits several fields to preserve readability. However, output to files maintains all original fields of the model as it is meant to be imported into other programs.
 
 **BONUS**
 
-4. The flag system is desigend to use two cli arguments: --flag value. Thefore some of the bonus feature requirements have been altered to support the app's base architecture. The flag filter options have also been extended to include more fields from the original data model such as age-rating, meta-score, and votes. This flag map system allows for easy extension of additional flags.
+4. The flag system is designed to use two cli arguments: --flag value. Therefore, some of the bonus feature requirements have been altered to support the app's base architecture. The flag filter options have also been extended to include more fields from the original data model such as age-rating, meta-score, and votes. This flag map system allows for easy extension of additional flags.
 5. The output system always requires a value for the filename, if no output flag is supplied, then the results are printed to the terminal.
-6. The top ten lists flags work similar to the filter flag and returns a sorted result that is at most 10 items long.
-7. The hidden gems bonus feature is implmented as a top ten list with a custom weight function to determine the rank. It calculates a custom weight by dividing the ratings of movies with its vote count to represent an inverse relationship.
-8. Genre based insight bonus feature is extended to include groupings by years in order to follow the two arguments flag system. It can provide powerful insights when filtering on an actor or director. 
+6. The top ten lists flags work similar to the filter flag and return a sorted result that is at most 10 items long.
+7. The hidden gems bonus feature is implemented as a top ten list with a custom weight function to determine the rank. It calculates a custom weight by dividing the ratings of movies with its vote count to represent an inverse relationship.
+8. Genre-based insight bonus feature is extended to include groupings by years to follow the two-argument flag system. It can provide powerful insights when filtering on an actor or director. 
