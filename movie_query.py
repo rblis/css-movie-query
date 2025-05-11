@@ -190,9 +190,8 @@ class MovieQuery:
             "highest-grossing": lambda movies: sorted(movies, key=lambda movie: -movie.gross)[:10],
             "longest-runtime": lambda movies: sorted(movies, key=lambda movie: -movie.runtime)[:10],
             # Custom weight based on inverse relationship between rating and votes
-            "hidden-gems": lambda movies: sorted(movies,
-                                                 key=lambda movie: (-movie.imdb_rating / movie.no_of_votes))[
-                                          :10],
+            "hidden-gems": lambda movies:
+                sorted(movies,key=lambda movie: (-movie.imdb_rating / movie.no_of_votes))[:10],
         }
 
         self.insights_map = {
