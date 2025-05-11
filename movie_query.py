@@ -254,7 +254,8 @@ class MovieQuery:
         print("Printing insights by genre:")
         for stat in stats:
             print(
-                f"Genre: {stat['genre']}, Average Rating: {round(stat['average_rating'], 2)}, Average Gross: ${stat['average_gross']}, Average Runtime: {stat['average_runtime']} mins")
+                f"Genre: {stat['genre']}, Average Rating: {round(stat['average_rating'], 2)}, Average Gross: ${stat['average_gross']}, Average Runtime: {stat['average_runtime']} mins"
+            )
 
     @staticmethod
     def print_output(movies: list[MovieMetric], filename: str):
