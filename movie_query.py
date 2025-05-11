@@ -282,7 +282,7 @@ class MovieQuery:
                         text_file.write(movie.row_vals() + "\n")
 
         except Exception as e:
-            exit(f"Error writing to json file '{filename}': {e}")
+            exit(f"Error writing to file '{filename}': {e}")
 
     @staticmethod
     def load_movies(file_path: str) -> list[MovieMetric]:
@@ -386,7 +386,6 @@ class MovieQuery:
 
 
 if __name__ == "__main__":
-    # movies = []
     arguments = sys.argv[1:]
     if len(arguments) == 0:
         exit("No arguments provided. Use --help or -h for usage instructions.")
