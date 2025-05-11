@@ -229,7 +229,8 @@ class MovieQuery:
         print("Printing insights by year:")
         for stat in stats:
             print(
-                f"Year: {stat['year']}, Average Rating: {round(stat['average_rating'], 2)}, Average Gross: ${stat['average_gross']}, Average Runtime: {stat['average_runtime']} mins")
+                f"Year: {stat['year']}, Average Rating: {round(stat['average_rating'], 2)}, Average Gross: ${stat['average_gross']}, Average Runtime: {stat['average_runtime']} mins"
+            )
 
     @staticmethod
     def generate_genre_insights(movies: list[MovieMetric]) -> None:
