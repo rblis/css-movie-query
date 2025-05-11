@@ -168,20 +168,20 @@ class MovieQuery:
             "--votes-above": lambda movie, votes: movie.no_of_votes and movie.no_of_votes > int(votes),
             "--votes-below": lambda movie, votes: movie.no_of_votes and movie.no_of_votes < int(votes),
             "--title": lambda movie, title:
-            movie.series_title and title.lower() in movie.series_title.lower(),
+                movie.series_title and title.lower() in movie.series_title.lower(),
             "--director": lambda movie, director:
-            movie.director and director.lower() in movie.director.lower(),
+                movie.director and director.lower() in movie.director.lower(),
             "--actor": lambda movie, actor:
-            actor.lower() in (
-                movie.star_1.lower(),
-                movie.star_2.lower(),
-                movie.star_3.lower(),
-                movie.star_4.lower(),
-            ),
+                actor.lower() in (
+                    movie.star_1.lower(),
+                    movie.star_2.lower(),
+                    movie.star_3.lower(),
+                    movie.star_4.lower(),
+                ),
             "--genre": lambda movie, genre:
-            movie.genre and genre.lower() in movie.genre.lower().split(","),  # potential multi-match
+                movie.genre and genre.lower() in movie.genre.lower().split(","),  # potential multi-match
             "--age-rating": lambda movie, certificate:
-            movie.certificate and movie.certificate.lower() == certificate.lower(),
+                movie.certificate and movie.certificate.lower() == certificate.lower(),
         }
 
         self.top_ten_map = {
