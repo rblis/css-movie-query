@@ -33,23 +33,25 @@
    
 ### Example Usages
 
-1. To search for movies with the word 'rain' in the title and released after the year 2000
+1. To search for movies with the word `'rain'` in the title and released after the year `2000`
 
    ```bash
    python movie_query.py --title rain --year-after 2000
    ```
-2. To search for movies with actor 'Brad Pitt' and find out statics about his movies by year
+   **NOTE:** You can omit the quotes around a value if it doesn't contain spaces
+
+
+2. To search for movies with actor `'Brad Pitt'` and find out statics about his movies by year
 
    ```bash
    python movie_query.py --actor 'Brad Pitt' --insights 'year'
    ```
-   **NOTE:** You can omit the quotes around a value if it doesn't contain spaces
 
 
-4. To search for the top ten highest grossing movies that are rated 'PG-13' and print the output to a file called top_ten_results.csv
+4. To search for the top ten highest grossing movies that are rated `'PG-13'` and print the output to a file called `top_ten_results.csv`
 
    ```bash
-   python movie_query.py --age-rating 'PG-13' --top-ten 'highest-rated' --output top_ten_results.csv
+   python movie_query.py --age-rating 'PG-13' --top-ten 'highest-rated' --output 'top_ten_results.csv'
    ```
    **NOTE:** If you omit the --output flag, the results will be printed to the console.
 
