@@ -305,10 +305,13 @@ class MovieQuery:
             if flag.startswith("--"):
                 if index + 1 < len(args) and not args[index + 1].startswith("--"):
                     if flag in self.flag_map:
-                        filters[flag] = args[index + 1]
+                        if flag in filters:
+                            print(f"Duplicate flag: {flag}. Ignoring.")
+                        else:
+                            filters[flag] = args[index + 1]
                     elif flag in self.command_map:
                         if flag in commands:
-                            print(f"Duplicate action flag: {flag}. Ignoring.")
+                            print(f"Duplicate flag: {flag}. Ignoring.")
                         else:
                             commands[flag] = args[index + 1]
                     else:
