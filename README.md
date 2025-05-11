@@ -2,7 +2,7 @@
 
 ### Instructions to run
 
-**NOTE:** This program was tested on python 3.13.2
+**NOTE:** This program was tested on python `3.13.2`
 
 1. Clone the repository and navigate to its root directory
    ```bash
@@ -41,7 +41,7 @@
    **NOTE:** You can omit the quotes around a value if it doesn't contain spaces
 
 
-2. To search for movies with actor `'Brad Pitt'` and find out statics about his movies by year
+2. To search for movies with actor `'Brad Pitt'` and find out statistics about his movies grouped by year
 
    ```bash
    python movie_query.py --actor 'Brad Pitt' --insights 'year'
