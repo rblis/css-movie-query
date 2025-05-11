@@ -60,6 +60,7 @@
 3. The output to the terminal omits several fields to preserve readability. However, output to files maintains all original fields of the model as it is meant to be imported into other programs.
 
 **BONUS**
+
 4. The flag system is desigend to use two cli arguments: --flag value. Thefore some of the bonus feature requirements have been altered to support the app's base architecture. The flag filter options have also been extended to include more fields from the original data model such as age-rating, meta-score, and votes. This flag map system allows for easy extension of additional flags.
 5. The output system always requires a value for the filename, if no output flag is supplied, then the results are printed to the terminal.
 6. The top ten lists flags work similar to the filter flag and returns a sorted result that is at most 10 items long.
