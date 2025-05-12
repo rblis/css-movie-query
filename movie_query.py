@@ -296,7 +296,7 @@ class MovieQuery:
             exit(f"Error: The csv file '{file_path}' was not found.")
         except OSError:
             exit(f"Error opening csv file '{file_path}'")
-        movies.sort(key=lambda x: x.imdb_rating, reverse=True)
+        movies.sort(key=lambda movie: -movie.imdb_rating)
         return movies
 
     def collect_filters(self, args: list[str], index: int) -> tuple[dict[str, str], dict[str, str]]:
